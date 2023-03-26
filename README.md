@@ -33,6 +33,8 @@ create_dashboard.py  page_scrape.txt  README.md  scrapping.sh  update_dashboard.
 
 
 In the first place I saw that it was probably because I was not erasing the old dashboard when trying to create a new one so i create a bash file named update_dashboard.sh that kill the old dashboard and run the create_dashboard script. Then I've put this script in the crontab instead of create_dashboard.py as you can see above 
+
+I also tried to run the update_dashboard.sh in the "screen" editor, this looks like it's working once upon a time
 But I still have the same problem 
 
 4th :
