@@ -27,8 +27,8 @@ create_dashboard.py  page_scrape.txt  README.md  scrapping.sh  update_dashboard.
 [ec2-user@ip-172-31-43-91 Project-Python_git_linux]$
 
 
-In the first place I saw that it was probably because I was not erasing the old dashboard when trying to create a new one so i create a bash file named update_dashboard.sh that kill the old dashboard and run the create_dashboard script. Then I've put this script in the crontab instead of create_dashboard.py as you can see above 
-But I still have the same problem
+In the first place I saw that it was probably because I was not erasing the old dashboard when trying to create a new one so i create a bash file named update_dashboard.sh that kill the old dashboard and run the create_dashboard script. Then I've put this script in the crontab instead of create_dashboard.py as you can see above  (click on the readme file to make it easier to read)
+But I still have the same problem 
 
 4th :
 
