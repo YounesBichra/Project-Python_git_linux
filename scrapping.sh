@@ -1,7 +1,7 @@
 7#!/bin/bash
 
 # set variables
-curl https://www.google.com/finance/quote/.INX:INDEXSP?hl=fr > /home/ec2-user/Projet_Younes_Bichra/page_scrape.txt
+curl https://www.google.com/finance/quote/.INX:INDEXSP?hl=fr > /home/ec2-user/Projet_Younes_Bichra/Project-Python_git_linux/page_scrape.txt
 CSV_FILE="values.csv"
 
 
@@ -16,8 +16,8 @@ fi
 now=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
 # Scrape S&P500 value
-value=$(cat /home/ec2-user/Projet_Younes_Bichra/page_scrape.txt | grep -oP '(?<="YMlKec fxKbKc">)[^<]+' | tr ',' '.')
+value=$(cat /home/ec2-user/Projet_Younes_Bichra/Project-Python_git_linux/page_scrape.txt | grep -oP '(?<="YMlKec fxKbKc">)[^<]+' | tr ',' '.')
 
 # Save date and value to CSV file
-echo "$now,$value" >> /home/ec2-user/Projet_Younes_Bichra/values.csv
-sudo fuser -k 8050/tcp && /usr/bin/python3 /home/ec2-user/Projet_Younes_Bichra/create_dashboard.py
+echo "$now,$value" >> /home/ec2-user/Projet_Younes_Bichra/Project-Python_git_linux/values.csv
+sudo fuser -k 8050/tcp && /usr/bin/python3 /home/ec2-user/Projet_Younes_Bichra/Project-Python_git_linux/create_dashboard.py
